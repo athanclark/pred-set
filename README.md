@@ -49,3 +49,8 @@ myPredOperations = stToIO $ do
 ```
 
 Great success!
+
+
+> Note that this will only work if we use `stToIO`, as `runST` would expect
+> the `s` variable to be _purely_ polymorphic, while we require a `Typeable`
+> constraint. Luckily, `RealWorld` is an instance, so we gots-ta convert that shit.
