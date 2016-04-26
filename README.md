@@ -15,7 +15,7 @@ data Bar = -- ...
   deriving Typeable
   
 data Key = -- ...
-  deriving Typeable
+  deriving (Typeable, Eq, Hashable)
   
   
 pred1 :: Key -> Maybe Foo
