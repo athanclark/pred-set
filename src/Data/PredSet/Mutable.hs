@@ -1,4 +1,10 @@
-module Data.PredSet.Mutable where
+module Data.PredSet.Mutable
+  ( PredSet
+  , PredKey
+  , new
+  , insert
+  , lookup
+  ) where
 
 import Prelude hiding (lookup)
 import Data.Monoid
